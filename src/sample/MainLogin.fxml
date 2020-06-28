@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400" prefWidth="620" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainLoginController">
+    <children>
+        <ImageView fitHeight="411.0" fitWidth="620.0" pickOnBounds="true">
+            <image>
+                <Image url="@../image/Ancillary-Systems-page-title-background-1024x614.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="217.0" layoutY="84.0" text="*Username" textFill="WHITE" />
+        <Label layoutX="219.0" layoutY="163.0" text="*Password" textFill="WHITE" />
+        <TextField fx:id="textField1" layoutX="217.0" layoutY="122.0" prefHeight="31.0" prefWidth="258.0" />
+        <Button fx:id="staffLogin" layoutX="332.0" layoutY="243.0" mnemonicParsing="false" onAction="#handleButtonActionStaff" prefHeight="31.0" prefWidth="144.0" style="-fx-background-color: red;" text="Login as Staff" textFill="WHITE" />
+        <Button fx:id="customerLogin" layoutX="159.0" layoutY="243.0" mnemonicParsing="false" onAction="#handleButtonActionCustomer" prefHeight="31.0" prefWidth="144.0" style="-fx-background-color: red;" text="Login as Customer" textFill="WHITE" />
+        <Label layoutX="151.0" layoutY="305.0" text="Don't have an account ?" textFill="WHITE" />
+        <Label fx:id="label2" layoutX="184.0" layoutY="337.0" onMouseClicked="#toRegister" text="* Register here" textFill="RED" />
+        <Label layoutX="339.0" layoutY="337.0" onMouseClicked="#forgetPassword" text="* Forget Password" textFill="RED" />
+        <PasswordField fx:id="textField2" layoutX="217.0" layoutY="190.0" prefHeight="31.0" prefWidth="258.0" />
+        <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="200.0" layoutX="409.0" layoutY="13.0" visible="false" />
+        <Label layoutX="145.0" layoutY="25.0" prefHeight="46.0" prefWidth="332.0" text="Premo International Co." textFill="WHITE">
+            <font>
+                <Font size="31.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="46.0" fitWidth="44.0" layoutX="159.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/149071.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="44.0" fitWidth="44.0" layoutX="159.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/lock-2430207_960_720.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

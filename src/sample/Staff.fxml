@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StaffController">
+    <children>
+        <SplitPane dividerPositions="0.22160356347438753, 0.7249443207126949" focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+            <items>
+                <AnchorPane>
+                    <children>
+                        <Button layoutY="2.0" mnemonicParsing="false" onMouseClicked="#handleReturn" text="Logout " />
+                  <Label alignment="CENTER" layoutX="57.0" layoutY="58.0" style="&#10;" text="Project ID" textAlignment="CENTER" wrapText="false">
+                     <font>
+                        <Font size="18.0" fx:id="x11" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="tableIDs" layoutX="-2.0" layoutY="96.0" prefHeight="294.0" prefWidth="200.0" />
+                  <TextField fx:id="textField1" layoutX="24.0" layoutY="426.0" />
+                  <Button fx:id="btn1" layoutX="72.0" layoutY="460.0" mnemonicParsing="false" text="Select" />
+                  <Label layoutX="60.0" layoutY="397.0" text="Fill Project ID " />
+                  <Button fx:id="reset" layoutX="72.0" layoutY="504.0" mnemonicParsing="false" text="Reset" />
+                    </children>
+                </AnchorPane>
+                <ScrollPane prefHeight="-1.0" prefWidth="-1.0">
+                    <content>
+                        <AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="581.0" prefWidth="446.0">
+                            <children>
+                                <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" style="&#10;" text="Project Detail" textAlignment="CENTER" wrapText="false">
+                                    <font>
+                                        <Font size="18.0" fx:id="x1" />
+                                    </font></Label>
+                        <TableView fx:id="tableView" layoutX="17.0" layoutY="103.0" prefHeight="200.0" prefWidth="402.0" />
+                        <Button fx:id="confirm" layoutX="188.0" layoutY="338.0" mnemonicParsing="false" text="Confirm" />
+                        <Label alignment="CENTER" layoutX="13.0" layoutY="363.0" style="&#10;" text="Project Status" textAlignment="CENTER" wrapText="false">
+                           <font>
+                              <Font size="18.0" fx:id="x12" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Complete" layoutX="276.0" layoutY="486.0" mnemonicParsing="false" text="Complete" />
+                        <TextField fx:id="tf" layoutX="235.0" layoutY="432.0" />
+                        <TableView fx:id="ta" layoutX="13.0" layoutY="394.0" prefHeight="171.0" prefWidth="198.0" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </ScrollPane>
+                <AnchorPane prefHeight="576.0" prefWidth="231.0">
+                    <children>
+                        <Label alignment="CENTER" font="$x1" layoutX="14.0" layoutY="14.0" style="&#10;" text="Profile" textAlignment="CENTER" wrapText="false" />
+                        <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" layoutX="25.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label layoutX="35.0" layoutY="271.0" text="First name :" />
+                        <Label layoutX="35.0" layoutY="300.0" text="Last name :" />
+                        <Label fx:id="label1" layoutX="125.0" layoutY="240.0" text="label" wrapText="true" />
+                        <Label fx:id="label2" layoutX="125.0" layoutY="271.0" text="label" wrapText="true" />
+                        <Label layoutX="77.0" layoutY="240.0" text="ID :" />
+                        <Label fx:id="label3" layoutX="125.0" layoutY="300.0" text="label" wrapText="true" />
+                  <Label alignment="CENTER" layoutX="84.0" layoutY="347.0" style="&#10;" text="Payment " textAlignment="CENTER" wrapText="false">
+                     <font>
+                        <Font size="18.0" fx:id="x13" />
+                     </font>
+                  </Label>
+                  <Button fx:id="deposit" layoutX="32.0" layoutY="418.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="182.0" text="Deposit" />
+                  <Button fx:id="full" layoutX="33.0" layoutY="482.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="182.0" text="Full" />
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+        <HBox id="HBox" alignment="CENTER_LEFT" spacing="5.0" VBox.vgrow="NEVER">
+            <children>
+                <Label maxHeight="1.7976931348623157E308" maxWidth="-1.0" text="Left status" HBox.hgrow="ALWAYS">
+                    <font>
+                        <Font size="11.0" fx:id="x3" />
+                    </font>
+                    <textFill>
+                        <Color blue="0.625" green="0.625" red="0.625" fx:id="x4" />
+                    </textFill>
+                </Label>
+                <Pane prefHeight="-1.0" prefWidth="-1.0" HBox.hgrow="ALWAYS" />
+                <Label font="$x3" maxWidth="-1.0" text="Right status" textFill="$x4" HBox.hgrow="NEVER" />
+            </children>
+            <padding>
+                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+            </padding>
+        </HBox>
+    </children>
+</VBox>

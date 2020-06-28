@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="717.0" prefWidth="1067.0" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CustomerMainController">
+            <children>
+      <Pane prefHeight="717.0" prefWidth="1067.0">
+         <children>
+                      <Label alignment="CENTER" style="&#10;" text="Product Price" textAlignment="CENTER" wrapText="false">
+                          <font>
+                              <Font size="18.0" fx:id="x1" />
+                          </font>
+                          <textFill>
+                              <Color blue="0.624" green="0.624" red="0.624" fx:id="x2" />
+                          </textFill>
+                      </Label>
+                      <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" layoutX="37.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true" />
+                      <ImageView fx:id="imageView1" fitHeight="150.0" fitWidth="200.0" layoutX="534.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true" />
+                      <Label fx:id="label1" layoutX="261.0" layoutY="94.0" text="Name :" />
+                      <Label fx:id="label2" layoutX="263.0" layoutY="127.0" text="Price : " />
+                      <Label fx:id="name1" layoutX="316.0" layoutY="94.0" text="Label" />
+                      <Label fx:id="price1" layoutX="316.0" layoutY="127.0" text="Label" />
+                      <Label fx:id="label3" layoutX="755.0" layoutY="94.0" text="Name :" />
+                      <Label fx:id="label4" layoutX="758.0" layoutY="127.0" text="Price :" />
+                      <Label fx:id="name2" layoutX="808.0" layoutY="94.0" text="Label" />
+                      <Label fx:id="price2" layoutX="808.0" layoutY="127.0" text="Label" />
+                      <Button fx:id="select1" layoutX="7.0" layoutY="39.0" mnemonicParsing="false" text="Microphone" />
+                      <Button fx:id="select2" layoutX="105.0" layoutY="39.0" mnemonicParsing="false" text="Power Mixer" />
+                      <Button fx:id="select3" layoutX="303.0" layoutY="39.0" mnemonicParsing="false" text="Speaker cabinet" />
+                      <Button fx:id="select4" layoutX="206.0" layoutY="39.0" mnemonicParsing="false" text="DVD Tuner" />
+                      <Button fx:id="select5" layoutX="421.0" layoutY="39.0" mnemonicParsing="false" text="Cable Connector" />
+                      <Button fx:id="select6" layoutX="545.0" layoutY="39.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="Other" />
+                      <Button fx:id="add1" layoutX="102.0" layoutY="249.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="35.0" text="+" />
+                      <Button fx:id="del1" layoutX="67.0" layoutY="249.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="35.0" text="-" />
+                      <TextArea fx:id="amount1" editable="false" layoutX="163.0" layoutY="242.0" prefHeight="39.0" prefWidth="47.0" wrapText="true" />
+                      <Button fx:id="confirm1" layoutX="245.0" layoutY="249.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="106.0" text="Select" />
+                      <TextArea fx:id="amount2" editable="false" layoutX="680.0" layoutY="242.0" prefHeight="39.0" prefWidth="47.0" wrapText="true" />
+                      <Button fx:id="del2" layoutX="582.0" layoutY="249.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="35.0" text="-" />
+                      <Button fx:id="add2" layoutX="617.0" layoutY="249.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="35.0" text="+" />
+                      <Button fx:id="confirm2" layoutX="769.0" layoutY="249.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="106.0" text="Select" />
+                      <TextArea fx:id="showSelected" layoutX="586.0" layoutY="293.0" prefHeight="115.0" prefWidth="375.0" />
+                      <AnchorPane layoutY="408.0" prefWidth="1067.0">
+                          <children>
+                              <Label alignment="CENTER" font="$x1" layoutX="35.0" layoutY="14.0" style="&#10;" text="Contact Staff" textAlignment="CENTER" textFill="$x2" wrapText="false" />
+                              <ImageView fitHeight="52.0" fitWidth="50.0" layoutX="62.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@../image/1200px-Facebook_F_icon.svg.png" />
+                                  </image>
+                              </ImageView>
+                              <Label layoutX="26.0" layoutY="126.0" text="Staff 1 Kitsada Salachupong" />
+                              <Label layoutX="21.0" layoutY="173.0" text=" Staff 2 Natdanai Budsadee" />
+                              <Label layoutX="19.0" layoutY="224.0" text=" Staff 3 Puwamin Leksup " />
+                              <Label layoutX="21.0" layoutY="274.0" text="Staff 4 Lahut Sriharaun" />
+                              <Button fx:id="staff1" layoutX="239.0" layoutY="121.0" mnemonicParsing="false" text="Click Here" />
+                              <Button fx:id="staff2" layoutX="239.0" layoutY="168.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="70.0" text="Click Here" />
+                              <Button fx:id="staff3" layoutX="239.0" layoutY="219.0" mnemonicParsing="false" text="Click Here" />
+                              <Button fx:id="staff4" layoutX="239.0" layoutY="270.0" mnemonicParsing="false" text="Click Here" />
+                            <AnchorPane layoutX="608.0" layoutY="41.0" prefWidth="421.0">
+                                <children>
+                                    <Label alignment="CENTER" layoutX="223.0" layoutY="14.0" style="&#10;" text="Profile" textAlignment="CENTER" wrapText="false">
+                                        <font>
+                                            <Font size="18.0" fx:id="x111" />
+                                        </font>
+                                        <textFill>
+                                            <Color blue="0.624" green="0.624" red="0.624" fx:id="x211" />
+                                        </textFill>
+                                    </Label>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="23.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="imageViewProfile" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label layoutX="249.0" layoutY="107.0" text="Name :" />
+                                    <Label layoutX="230.0" layoutY="141.0" text="Surname :" />
+                                    <Label layoutX="235.0" layoutY="208.0" text="E-mail : " />
+                                    <Label layoutX="237.0" layoutY="174.0" text="Phone : " />
+                                    <Label fx:id="labelName" layoutX="307.0" layoutY="107.0" text="Label" />
+                                    <Label fx:id="labelSurname" layoutX="307.0" layoutY="141.0" text="Label" />
+                                    <Label fx:id="labelEmail" layoutX="307.0" layoutY="208.0" text="Label" />
+                                    <Label fx:id="labelPhone" layoutX="307.0" layoutY="174.0" text="Label" />
+                              <Label layoutX="268.0" layoutY="75.0" text="ID :" />
+                              <Label fx:id="labelID" layoutX="307.0" layoutY="75.0" text="Label" />
+                              <Label fx:id="project_id" layoutX="228.0" layoutY="49.0" text="Project_id :" />
+                              <Label fx:id="project_idshow" layoutX="307.0" layoutY="49.0" text="Label" />
+                                </children>
+                  </AnchorPane>
+                            <Pane layoutX="326.0" layoutY="-15.0" prefHeight="272.0" prefWidth="253.0">
+                                <children>
+                                    <Label alignment="CENTER" layoutX="91.0" layoutY="1.0" style="&#10;" text="Transaction" textAlignment="CENTER" wrapText="false">
+                                        <font>
+                                            <Font size="18.0" fx:id="x11" />
+                                        </font>
+                                        <textFill>
+                                            <Color blue="0.624" green="0.624" red="0.624" fx:id="x21" />
+                                        </textFill>
+                                    </Label>
+                                    <Button fx:id="logout" layoutX="27.0" layoutY="290.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="219.0" text="Logout" />
+                                    <Button fx:id="Fullpayment" layoutX="27.0" layoutY="142.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="219.0" text="Full payment" />
+                                    <Label layoutX="42.0" layoutY="43.0" text="Assign Status : " />
+                                    <Label fx:id="projectStatus" layoutX="153.0" layoutY="43.0" text="Not Assign" />
+                                    <Button fx:id="WorkingStatus" layoutX="27.0" layoutY="215.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="219.0" text="Working Status" />
+                                    <Button fx:id="PaymentStatus" layoutX="27.0" layoutY="253.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="219.0" text="Payment Status" />
+                                    <Button fx:id="DepositPayment" layoutX="28.0" layoutY="75.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="219.0" text="Deposit Payment" />
+                                    <Button fx:id="DepositReport" layoutX="27.0" layoutY="108.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="219.0" text="Deposit Payment Report" />
+                                    <Button fx:id="FullpaymentReport" layoutX="27.0" layoutY="179.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="219.0" text="Full payment Report" />
+                                </children>
+                            </Pane>
+                          </children>
+                      </AnchorPane>
+                      <Button fx:id="assign" layoutX="974.0" layoutY="311.0" mnemonicParsing="false" text="Assign" />
+                      <Button fx:id="undo" layoutX="970.0" layoutY="363.0" mnemonicParsing="false" text="Undo" />
+         </children>
+      </Pane>
+            </children>
+        </AnchorPane>
